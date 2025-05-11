@@ -1,5 +1,6 @@
 import Link from "next/link";
 import GetStartedButton from "./components/GetStartedButton";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -111,32 +112,48 @@ export default function Home() {
           </div>
         </nav>
       </header>
-        <main className="flex flex-col gap-[32px] row-start-2 items-center justify-center text-center bg-white dark:bg-gray-900">
+      <main className="flex flex-col gap-[32px] row-start-2 items-center justify-center text-center bg-white dark:bg-gray-900">
         <div className="text-7xl font-bold pt-30">INFO SITE</div>
         <ul className="list-inside text-lg sm:text-l text-center sm:text-center font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             A platform to view user profiles, posts, comments, and<br />
-            explore data through interactive ApexCharts visualizations. 
+            explore data through interactive ApexCharts visualizations.
           </li>
         </ul>
-
         <div className="flex gap-4 items-center flex-col sm:flex-row justify-center mb-15">
           <GetStartedButton />
         </div>
         <section className="bg-white dark:bg-gray-900">
           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
             <div className="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
-              <h2 id="our-blog" className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white pt-20">CONTENTS</h2>
-              <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">The contents of this site includes users and their profile, posts with comments and data visualizations.</p>
+              <h2
+                id="our-blog"
+                className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white pt-20"
+              >
+                CONTENTS
+              </h2>
+              <p className="font-light text-gray-500 sm:text-xl dark:text-gray-400">
+                The contents of this site includes users and their profile,
+                posts with comments and data visualizations.
+              </p>
             </div>
             <div className="grid gap-8 lg:grid-cols-3">
-              <Link href="/users" className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-transform transform hover:scale-105">
+              <Link
+                href="/users"
+                className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-transform transform hover:scale-105"
+              >
                 <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-3">
                   Users
                 </h2>
-                <p className="mb-5 font-light text-gray-500 dark:text-gray-400">This contains the list of users and their background information.</p>
+                <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
+                  This contains the list of users and their background
+                  information.
+                </p>
               </Link>
-              <Link href="/posts" className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-transform transform hover:scale-105">
+              <Link
+                href="/posts"
+                className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-transform transform hover:scale-105"
+              >
                 <Image
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDaivwmfdFKZSk1vWGCN2RRoQh_NNMutGOkp4dL5qcSs5Mkk_IfjS8B4mDON3oz2snwvA&usqp=CAU"
                   alt="Posts"
@@ -147,9 +164,14 @@ export default function Home() {
                 <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-3">
                   Posts
                 </h2>
-                <p className="mb-5 font-light text-gray-500 dark:text-gray-400">This contains various posts with multiple comments.</p>
+                <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
+                  This contains various posts with multiple comments.
+                </p>
               </Link>
-              <Link href="/dashboard" className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-transform transform hover:scale-105">
+              <Link
+                href="/dashboard"
+                className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-transform transform hover:scale-105"
+              >
                 <Image
                   src="https://img.freepik.com/premium-vector/blue-bar-graph-with-line-graph-it_698780-1072.jpg"
                   alt="Dashboard"
@@ -160,7 +182,10 @@ export default function Home() {
                 <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-3">
                   Dashboard
                 </h2>
-                <p className="mb-5 font-light text-gray-500 dark:text-gray-400">This contains the data visualizations of the number of users, posts and comments.</p>
+                <p className="mb-5 font-light text-gray-500 dark:text-gray-400">
+                  This contains the data visualizations of the number of users,
+                  posts and comments.
+                </p>
               </Link>
             </div>
           </div>
