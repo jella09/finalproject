@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import GetStartedButton from "./components/GetStartedButton";
 
@@ -9,13 +8,7 @@ export default function Home() {
         <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 w-full">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="#" className="flex items-center">
-              <Image
-                src="https://flowbite.com/docs/images/logo.svg"
-                className="mr-3 h-6 sm:h-9"
-                alt="Flowbite Logo"
-                width={36}
-                height={36}
-              />
+              <span className="mr-3 h-6 sm:h-9">Logo</span>
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
                 INFO SITE
               </span>
@@ -138,13 +131,6 @@ export default function Home() {
             </div>
             <div className="grid gap-8 lg:grid-cols-3">
               <Link href="/users" className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-transform transform hover:scale-105">
-                <Image
-                  src="https://cdn.pixabay.com/photo/2018/04/18/18/56/user-3331256_1280.png"
-                  alt="Users"
-                  className="w-full h-48 object-cover rounded-t-lg"
-                  width={300}
-                  height={200}
-                />
                 <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-3">
                   Users
                 </h2>
