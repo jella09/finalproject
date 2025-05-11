@@ -185,6 +185,6 @@ export default function Home() {
   );
 }
 
-// Add a safeguard to handle undefined properties
-// Example:
-const { auth } = someObject || {};
+
+const someObject = someObject || {}; 
+const { auth } = someObject;

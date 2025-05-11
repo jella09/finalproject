@@ -9,10 +9,12 @@ export default function Home() {
         <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 w-full">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="#" className="flex items-center">
-              <img
+              <Image
                 src="https://flowbite.com/docs/images/logo.svg"
                 className="mr-3 h-6 sm:h-9"
                 alt="Flowbite Logo"
+                width={36}
+                height={36}
               />
               <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
                 INFO SITE
@@ -149,14 +151,26 @@ export default function Home() {
                 <p className="mb-5 font-light text-gray-500 dark:text-gray-400">This contains the list of users and their background information.</p>
               </Link>
               <Link href="/posts" className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-transform transform hover:scale-105">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDaivwmfdFKZSk1vWGCN2RRoQh_NNMutGOkp4dL5qcSs5Mkk_IfjS8B4mDON3oz2snwvA&usqp=CAU" alt="Posts" className="w-full h-48 object-cover rounded-t-lg" />
+                <Image
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDaivwmfdFKZSk1vWGCN2RRoQh_NNMutGOkp4dL5qcSs5Mkk_IfjS8B4mDON3oz2snwvA&usqp=CAU"
+                  alt="Posts"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                  width={300}
+                  height={200}
+                />
                 <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-3">
                   Posts
                 </h2>
                 <p className="mb-5 font-light text-gray-500 dark:text-gray-400">This contains various posts with multiple comments.</p>
               </Link>
               <Link href="/dashboard" className="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-lg transition-transform transform hover:scale-105">
-                <img src="https://img.freepik.com/premium-vector/blue-bar-graph-with-line-graph-it_698780-1072.jpg" alt="Dashboard" className="w-full h-48 object-cover rounded-t-lg" />
+                <Image
+                  src="https://img.freepik.com/premium-vector/blue-bar-graph-with-line-graph-it_698780-1072.jpg"
+                  alt="Dashboard"
+                  className="w-full h-48 object-cover rounded-t-lg"
+                  width={300}
+                  height={200}
+                />
                 <h2 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white pt-3">
                   Dashboard
                 </h2>
