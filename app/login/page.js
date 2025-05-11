@@ -1,18 +1,23 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export default function Login() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen pt-5 pb-20 font-[family-name:var(--font-geist-sans)] bg-gray-50 dark:bg-gray-900">
       <header className="w-full flex justify-center">
         <div className="flex items-center">
-          <a href="/" className="flex items-center">
-            <img
+          <Link href="/" className="flex items-center">
+            <Image
               src="https://flowbite.com/docs/images/logo.svg"
               className="mr-3 h-6 sm:h-9"
               alt="Flowbite Logo"
+              width={36}
+              height={36}
             />
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
               INFO SITE
             </span>
-          </a>
+          </Link>
         </div>
       </header>
       <main className="flex flex-col items-center justify-center px-6 py-8 mx-auto w-full sm:max-w-md">
