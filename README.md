@@ -35,10 +35,10 @@ Node.js
 npm
 Gitbash
 
-# Create a new Next.js application npx create-next-app@latest webtech-final-project
+# Create a new Next.js application
 cd webtech-final-project
 
-# Install Tailwind CSS
+# Integrated Tailwind CSS
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
@@ -52,9 +52,22 @@ npm install flowbite flowbite-react
 # content: ["./node_modules/flowbite-react/**/*.js", "./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"]
 
 # Install additional libraries
-npm install @tanstack/react-query
+1. Dependencies
+npm install @headlessui/react
 npm install apexcharts react-apexcharts
-npm install @react-google-maps/api
+npm install mapbox-gl
+npm install next
+npm install react react-dom
+npm install react-map-gl
+
+2. DevDependencies
+npm install -D @eslint/eslintrc
+npm install -D @tailwindcss/postcss
+npm install -D @types/node
+npm install -D @types/react
+npm install -D eslint eslint-config-next
+npm install -D tailwindcss postcss autoprefixer
+
 
 # Start development server
 npm run dev
