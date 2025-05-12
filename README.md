@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Web Systems and Technologies Final Project
 
-## Getting Started
+For our final project, our group developed a fully responsive and interactive web application called INFO SITE using Next.js (App Router), Tailwind CSS, and Flowbite UI. This site has 5 navigations (Home, Users, Posts, Dashboard and About Us). Home shows the starting page of the site. Users shows the list of users with their username and email, then when it is clicked, a pop up message shows his/her information including his/her posts. Posts shows the posts of the users and when clicked, it shows the full details and the comments. Dashboard shows the data visualizations of the number of users, posts and comments retrieve from the JSON  placeholder using bar graph. About Us shows the authors or collaborators of this site.
 
-First, run the development server:
+This project allowed us to apply our knowledge in frontend and back-end development, API integration, and real-time data visualization.
 
-```bash
+Project Features
+
+API Integration: 
+Retrieved and displayed user, post, and comment data from the 
+JSON Placeholder.
+
+Reusable UI Components: 
+Designed a clean interface using Flowbite components like buttons, cards, sidebars and navigation.
+
+Efficient Data Handling: Employed React Query to manage and cache data fetching.
+
+Map Integration: Mapped user locations using the Google Maps API via @react-google-maps/api.
+
+Dynamic Charts: Visualized live application data with ApexCharts.
+
+Deployment: The app is live and hosted on Vercel for continuous deployment.
+
+Technologies Used
+
+Framework: Next.js (App Router)
+Styling: Tailwind CSS + Flowbite
+Data Management: React Query
+Maps: Google Maps API
+Charts: ApexCharts
+Hosting: Vercel
+
+Installation & Setup:
+Node.js
+npm
+Gitbash
+
+# Create a new Next.js application npx create-next-app@latest webtech-final-project
+cd webtech-final-project
+
+# Install Tailwind CSS
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+# Install Flowbite and dependencies
+npm install flowbite flowbite-react
+
+# Configure Tailwind to include Flowbite
+
+# In tailwind.config.js, add:
+
+# content: ["./node_modules/flowbite-react/**/*.js", "./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"]
+
+# Install additional libraries
+npm install @tanstack/react-query
+npm install apexcharts react-apexcharts
+npm install @react-google-maps/api
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Build for production
+npm run build
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Start production server
+npm start
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+TEAM MEMBER:
+1. JELLA MAE CALUPIT
+- designed the website using flowbite and deployed to vercel
+2. SANDRINE GUELAS 
+- created Next.js and integrated tailwind CSS
+3. JAMES WILSON BARTOLATA
+- checked the website's error and tested it after deployment
+4. CRISTIAN CATAMORA
+- none
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed URL in Vercel: [https://infositeapp.vercel.app/]
