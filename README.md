@@ -1,4 +1,4 @@
-Web Systems and Technologies Final Project
+ Web Systems and Technologies Final Project
 
 For our final project, our group developed a fully responsive and interactive web application called INFO SITE using Next.js (App Router), Tailwind CSS, and Flowbite UI. This site has 5 navigations (Home, Users, Posts, Dashboard and About Us). Home shows the starting page of the site. Users shows the list of users with their username and email, then when it is clicked, a pop up message shows his/her information including his/her posts. Posts shows the posts of the users and when clicked, it shows the full details and the comments. Dashboard shows the data visualizations of the number of users, posts and comments retrieve from the JSON  placeholder using bar graph. About Us shows the authors or collaborators of this site.
 
