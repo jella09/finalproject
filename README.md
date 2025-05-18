@@ -50,7 +50,8 @@ npm install flowbite flowbite-react
 # In tailwind.config.js, add:
 
 # content: ["./node_modules/flowbite-react/**/*.js", "./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"]
-kvbjnkig
+
+
 
 # Install additional libraries
 1. Dependencies
