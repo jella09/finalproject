@@ -91,3 +91,4 @@ TEAM MEMBER:
 - none
 
 Deployed URL in Vercel: [https://infositeapp.vercel.app/]
+Link of the Presentation via Gdrive: [https://drive.google.com/drive/folders/1SY_N7Jh9LWfZDFga6APZnMJp04RWD27j?usp=sharing]
